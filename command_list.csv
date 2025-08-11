@@ -1,0 +1,44 @@
+    1  git config --global user.name
+    2  git config --global user.email
+    3  cd HW_10
+    4  touch text_ignore.txt
+    5  git status
+    6  nano text_ignore.txt
+    7  git status
+    8  git add text_ignor.txt
+    9  git status
+   10  git add text_ignore.txt
+   11  git add text_ignore.txt
+   12  git status
+   13  nano text_ignore.txt
+   14  nano .gitignore
+   15  git status
+   16  git rm --cached text_ignore.txt
+   17  git status
+   18  cd ~/Desktop/Git/HW_10
+   19  git status
+   20  git rm --cached text_ignore.txt
+   21  git rm -f --cached text_ignore.txt
+   22  git status
+   23  git add .gitignore
+   24  git commit -m "chore: add text_ignore.txt to .gitignore"
+   25  git status
+   26  touch main_test.txt
+   27  git add .
+   28  git commit -m "feat: add main_test.txt"
+   29  git branch develop
+   30  git checkout develop
+   31  touch develop_test.txt
+   32  git add develop_test.txt
+   33  git commit -m "feat: add develop_test.txt"
+   34  nano develop_test.txt
+   35  git status
+   36  git add develop_test.txt
+   37  nano develop_test.txt
+   38  git add develop_test.txt
+   39  git commit -m "feat: update develop_test.txt"
+   40  git status
+   41  git checkout main
+   42  git merge develop -m "merge: bring develop into main"
+   43  git log --oneline
+   44  history > command_list.csv
